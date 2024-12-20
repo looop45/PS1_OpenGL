@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/connermurray/dev/ps1_opengl/build",
+  "command": "/usr/bin/clang++  -I/Users/connermurray/dev/ps1_opengl/dependencies -isystem /opt/homebrew/include -g -arch arm64 -mmacosx-version-min=15.0 -o CMakeFiles/hello_window.dir/src/main.cpp.o -c /Users/connermurray/dev/ps1_opengl/src/main.cpp",
+  "file": "/Users/connermurray/dev/ps1_opengl/src/main.cpp",
+  "output": "CMakeFiles/hello_window.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/connermurray/dev/ps1_opengl/build",
+  "command": "/usr/bin/clang  -I/Users/connermurray/dev/ps1_opengl/dependencies -isystem /opt/homebrew/include -g -arch arm64 -mmacosx-version-min=15.0 -o CMakeFiles/hello_window.dir/src/glad.c.o -c /Users/connermurray/dev/ps1_opengl/src/glad.c",
+  "file": "/Users/connermurray/dev/ps1_opengl/src/glad.c",
+  "output": "CMakeFiles/hello_window.dir/src/glad.c.o"
+}
+]
