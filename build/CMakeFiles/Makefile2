@@ -63,51 +63,181 @@ CMAKE_BINARY_DIR = /Users/connermurray/dev/ps1_opengl/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hello_window.dir/all
+all: CMakeFiles/ps1_opengl.dir/all
+all: dependencies/all
+all: src/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/hello_window.dir/codegen
+codegen: CMakeFiles/ps1_opengl.dir/codegen
+codegen: dependencies/codegen
+codegen: src/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: dependencies/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hello_window.dir/clean
+clean: CMakeFiles/ps1_opengl.dir/clean
+clean: dependencies/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hello_window.dir
+# Directory level rules for directory dependencies
+
+# Recursive "all" directory target.
+dependencies/all: dependencies/CMakeFiles/glad.dir/all
+dependencies/all: dependencies/imgui/all
+.PHONY : dependencies/all
+
+# Recursive "codegen" directory target.
+dependencies/codegen: dependencies/CMakeFiles/glad.dir/codegen
+dependencies/codegen: dependencies/imgui/codegen
+.PHONY : dependencies/codegen
+
+# Recursive "preinstall" directory target.
+dependencies/preinstall: dependencies/imgui/preinstall
+.PHONY : dependencies/preinstall
+
+# Recursive "clean" directory target.
+dependencies/clean: dependencies/CMakeFiles/glad.dir/clean
+dependencies/clean: dependencies/imgui/clean
+.PHONY : dependencies/clean
+
+#=============================================================================
+# Directory level rules for directory dependencies/imgui
+
+# Recursive "all" directory target.
+dependencies/imgui/all: dependencies/imgui/CMakeFiles/imgui.dir/all
+.PHONY : dependencies/imgui/all
+
+# Recursive "codegen" directory target.
+dependencies/imgui/codegen: dependencies/imgui/CMakeFiles/imgui.dir/codegen
+.PHONY : dependencies/imgui/codegen
+
+# Recursive "preinstall" directory target.
+dependencies/imgui/preinstall:
+.PHONY : dependencies/imgui/preinstall
+
+# Recursive "clean" directory target.
+dependencies/imgui/clean: dependencies/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : dependencies/imgui/clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all:
+.PHONY : src/all
+
+# Recursive "codegen" directory target.
+src/codegen:
+.PHONY : src/codegen
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean:
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ps1_opengl.dir
 
 # All Build rule for target.
-CMakeFiles/hello_window.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/connermurray/dev/ps1_opengl/build/CMakeFiles --progress-num=1,2,3 "Built target hello_window"
-.PHONY : CMakeFiles/hello_window.dir/all
+CMakeFiles/ps1_opengl.dir/all: dependencies/CMakeFiles/glad.dir/all
+CMakeFiles/ps1_opengl.dir/all: dependencies/imgui/CMakeFiles/imgui.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/connermurray/dev/ps1_opengl/build/CMakeFiles --progress-num=11,12 "Built target ps1_opengl"
+.PHONY : CMakeFiles/ps1_opengl.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hello_window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello_window.dir/all
+CMakeFiles/ps1_opengl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ps1_opengl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 0
-.PHONY : CMakeFiles/hello_window.dir/rule
+.PHONY : CMakeFiles/ps1_opengl.dir/rule
 
 # Convenience name for target.
-hello_window: CMakeFiles/hello_window.dir/rule
-.PHONY : hello_window
+ps1_opengl: CMakeFiles/ps1_opengl.dir/rule
+.PHONY : ps1_opengl
 
 # codegen rule for target.
-CMakeFiles/hello_window.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/codegen
-.PHONY : CMakeFiles/hello_window.dir/codegen
+CMakeFiles/ps1_opengl.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/codegen
+.PHONY : CMakeFiles/ps1_opengl.dir/codegen
 
 # clean rule for target.
-CMakeFiles/hello_window.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/clean
-.PHONY : CMakeFiles/hello_window.dir/clean
+CMakeFiles/ps1_opengl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/clean
+.PHONY : CMakeFiles/ps1_opengl.dir/clean
+
+#=============================================================================
+# Target rules for target dependencies/CMakeFiles/glad.dir
+
+# All Build rule for target.
+dependencies/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f dependencies/CMakeFiles/glad.dir/build.make dependencies/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f dependencies/CMakeFiles/glad.dir/build.make dependencies/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/connermurray/dev/ps1_opengl/build/CMakeFiles --progress-num=1,2 "Built target glad"
+.PHONY : dependencies/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+dependencies/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 0
+.PHONY : dependencies/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: dependencies/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# codegen rule for target.
+dependencies/CMakeFiles/glad.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f dependencies/CMakeFiles/glad.dir/build.make dependencies/CMakeFiles/glad.dir/codegen
+.PHONY : dependencies/CMakeFiles/glad.dir/codegen
+
+# clean rule for target.
+dependencies/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f dependencies/CMakeFiles/glad.dir/build.make dependencies/CMakeFiles/glad.dir/clean
+.PHONY : dependencies/CMakeFiles/glad.dir/clean
+
+#=============================================================================
+# Target rules for target dependencies/imgui/CMakeFiles/imgui.dir
+
+# All Build rule for target.
+dependencies/imgui/CMakeFiles/imgui.dir/all:
+	$(MAKE) $(MAKESILENT) -f dependencies/imgui/CMakeFiles/imgui.dir/build.make dependencies/imgui/CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f dependencies/imgui/CMakeFiles/imgui.dir/build.make dependencies/imgui/CMakeFiles/imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/connermurray/dev/ps1_opengl/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target imgui"
+.PHONY : dependencies/imgui/CMakeFiles/imgui.dir/all
+
+# Build rule for subdir invocation for target.
+dependencies/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/imgui/CMakeFiles/imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connermurray/dev/ps1_opengl/build/CMakeFiles 0
+.PHONY : dependencies/imgui/CMakeFiles/imgui.dir/rule
+
+# Convenience name for target.
+imgui: dependencies/imgui/CMakeFiles/imgui.dir/rule
+.PHONY : imgui
+
+# codegen rule for target.
+dependencies/imgui/CMakeFiles/imgui.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f dependencies/imgui/CMakeFiles/imgui.dir/build.make dependencies/imgui/CMakeFiles/imgui.dir/codegen
+.PHONY : dependencies/imgui/CMakeFiles/imgui.dir/codegen
+
+# clean rule for target.
+dependencies/imgui/CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f dependencies/imgui/CMakeFiles/imgui.dir/build.make dependencies/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : dependencies/imgui/CMakeFiles/imgui.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

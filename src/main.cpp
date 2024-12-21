@@ -1,5 +1,6 @@
 #include "config.h"
 
+
 int main()
 {
     //Set GLFW window options
@@ -25,6 +26,9 @@ int main()
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     } 
+
+    //Initialize Imgui
+
 
     glViewport(0, 0, 800, 600);
 

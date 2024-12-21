@@ -117,48 +117,50 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello_window
+# Target rules for targets named ps1_opengl
 
 # Build rule for target.
-hello_window: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_window
-.PHONY : hello_window
+ps1_opengl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ps1_opengl
+.PHONY : ps1_opengl
 
 # fast build rule for target.
-hello_window/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/build
-.PHONY : hello_window/fast
+ps1_opengl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/build
+.PHONY : ps1_opengl/fast
 
-src/glad.o: src/glad.c.o
-.PHONY : src/glad.o
+#=============================================================================
+# Target rules for targets named glad
 
-# target to build an object file
-src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/src/glad.c.o
-.PHONY : src/glad.c.o
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
 
-src/glad.i: src/glad.c.i
-.PHONY : src/glad.i
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f dependencies/CMakeFiles/glad.dir/build.make dependencies/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
 
-# target to preprocess a source file
-src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/src/glad.c.i
-.PHONY : src/glad.c.i
+#=============================================================================
+# Target rules for targets named imgui
 
-src/glad.s: src/glad.c.s
-.PHONY : src/glad.s
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
 
-# target to generate assembly for a file
-src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/src/glad.c.s
-.PHONY : src/glad.c.s
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f dependencies/imgui/CMakeFiles/imgui.dir/build.make dependencies/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -166,7 +168,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,7 +176,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_window.dir/build.make CMakeFiles/hello_window.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps1_opengl.dir/build.make CMakeFiles/ps1_opengl.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -185,10 +187,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello_window"
-	@echo "... src/glad.o"
-	@echo "... src/glad.i"
-	@echo "... src/glad.s"
+	@echo "... glad"
+	@echo "... imgui"
+	@echo "... ps1_opengl"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -15,7 +15,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/connermurray/dev/ps1_opengl/dependencies -isystem /opt/homebrew/include
 
-CXX_FLAGSarm64 = -g -arch arm64 -mmacosx-version-min=15.0
+CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -mmacosx-version-min=15.0
 
-CXX_FLAGS = -g -arch arm64 -mmacosx-version-min=15.0
+CXX_FLAGS = -g -std=gnu++17 -arch arm64 -mmacosx-version-min=15.0
 

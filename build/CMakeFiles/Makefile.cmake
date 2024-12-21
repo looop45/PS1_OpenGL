@@ -11,6 +11,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.1/CMakeSystem.cmake"
+  "/Users/connermurray/dev/ps1_opengl/dependencies/CMakeLists.txt"
+  "/Users/connermurray/dev/ps1_opengl/dependencies/imgui/CMakeLists.txt"
+  "/Users/connermurray/dev/ps1_opengl/src/CMakeLists.txt"
+  "/Users/connermurray/pxr/OpenUSD/cmake/pxrTargets-release.cmake"
+  "/Users/connermurray/pxr/OpenUSD/cmake/pxrTargets.cmake"
+  "/Users/connermurray/pxr/OpenUSD/lib/cmake/MaterialX/MaterialXConfig.cmake"
+  "/Users/connermurray/pxr/OpenUSD/lib/cmake/MaterialX/MaterialXConfigVersion.cmake"
+  "/Users/connermurray/pxr/OpenUSD/lib/cmake/MaterialX/MaterialXTargets-release.cmake"
+  "/Users/connermurray/pxr/OpenUSD/lib/cmake/MaterialX/MaterialXTargets.cmake"
+  "/Users/connermurray/pxr/OpenUSD/pxrConfig.cmake"
   "/opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake"
   "/opt/homebrew/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
   "/opt/homebrew/lib/cmake/glfw3/glfw3Targets-release.cmake"
@@ -32,8 +42,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake"
+  "/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake"
   "/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake"
+  "/opt/homebrew/share/cmake/Modules/FindPython/Support.cmake"
+  "/opt/homebrew/share/cmake/Modules/FindPython3.cmake"
   "/opt/homebrew/share/cmake/Modules/FindThreads.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
@@ -64,9 +77,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "dependencies/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "dependencies/imgui/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/hello_window.dir/DependInfo.cmake"
+  "CMakeFiles/ps1_opengl.dir/DependInfo.cmake"
+  "dependencies/CMakeFiles/glad.dir/DependInfo.cmake"
+  "dependencies/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   )
